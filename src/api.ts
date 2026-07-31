@@ -158,6 +158,12 @@ export interface RouteOptionsBase {
   /** Whether to include routes that require a transaction or a message, or both
    * @default 'transaction' */
   executionType?: ExecutionType
+
+  /** Opt the request into gasless execution. The returned steps carry signable
+   * typed data instead of a `transactionRequest`, and a relay fee is deducted
+   * from the input amount as a `LIFI_GASLESS_RELAY_FEE_NAME` fee cost.
+   * @default false */
+  gasless?: boolean
 }
 
 /**
@@ -436,6 +442,12 @@ export interface QuoteRequest extends ToolConfiguration, TimingStrings {
   /** The execution type of the quote
    * @default 'transaction' */
   executionType?: ExecutionType
+
+  /** Opt the request into gasless execution. The response returns signable
+   * typed data instead of a `transactionRequest`, and a relay fee is deducted
+   * from the input amount as a `LIFI_GASLESS_RELAY_FEE_NAME` fee cost.
+   * @default false */
+  gasless?: boolean
 
   /** SVM specific option, without it implicit source swaps routes are discarded */
   jitoBundle?: boolean
