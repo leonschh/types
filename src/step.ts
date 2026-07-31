@@ -77,6 +77,17 @@ export interface FeeSplit {
   recipients?: FeeRecipient[]
 }
 
+/**
+ * `FeeCost.name` of the relay fee charged for gasless execution, added to
+ * `Estimate.feeCosts` when a quote is requested with `gasless: true`. This is
+ * the stable identifier for that entry — match on it rather than on the
+ * human-readable `description`, which may change.
+ *
+ * The entry always has `included: true`: the fee is taken out of the input
+ * amount, so the user does not send anything on top of `fromAmount`.
+ */
+export const LIFI_GASLESS_RELAY_FEE_NAME = 'LIFI Gasless Relay Fee'
+
 export interface FeeCost {
   name: string
   description: string
