@@ -161,7 +161,7 @@ export interface RouteOptionsBase {
 
   /** Opt the request into gasless execution. The returned steps carry signable
    * typed data instead of a `transactionRequest`, and a relay fee is deducted
-   * from the input amount as a `LIFI_GASLESS_RELAY_FEE_NAME` fee cost.
+   * from the input amount as a `feeCosts` entry named `LIFI Gasless Relay Fee`.
    * @default false */
   gasless?: boolean
 }
@@ -445,7 +445,7 @@ export interface QuoteRequest extends ToolConfiguration, TimingStrings {
 
   /** Opt the request into gasless execution. The response returns signable
    * typed data instead of a `transactionRequest`, and a relay fee is deducted
-   * from the input amount as a `LIFI_GASLESS_RELAY_FEE_NAME` fee cost.
+   * from the input amount as a `feeCosts` entry named `LIFI Gasless Relay Fee`.
    * @default false */
   gasless?: boolean
 
