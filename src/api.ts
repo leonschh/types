@@ -227,6 +227,16 @@ export interface RouteOptions extends RouteOptionsBase {
    * When provided, this preset will override other route options with optimized settings */
   preset?: string
 
+  /** Opt into amount-flexible routing where the underlying tool supports it.
+   * Instead of a fixed minimum output, an amount-flexible route carries a signed
+   * rate floor, a minimum deposit and a rate expiry alongside a deposit address:
+   * any amount at or above the minimum, funded within the window, executes at
+   * the live price no worse than the floor. Currently honored only by
+   * cross-chain Smart Deposit Address routes; ignored by tools that do not
+   * support it.
+   * @default false */
+  amountFlexible?: boolean
+
   /** Whether the user wants to insure their tx
    * @deprecated This property is deprecated and will be removed in future versions. */
   insurance?: boolean
