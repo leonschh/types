@@ -275,8 +275,10 @@ export interface AllowDenyPrefer {
 
 export interface PoolDeny {
   /**
-   * AMM pool addresses to exclude from swap quoting. EVM pool addresses are
-   * `0x`-prefixed 20-byte hex; Solana pool addresses are base58 pubkeys.
+   * AMM pool identifiers to exclude from swap quoting. Accepts either:
+   *   - Uniswap V2 / V3: a plain EVM pool address (`0x` + 40 hex, non-zero).
+   *   - Uniswap V4: `${poolManagerAddress}-${poolId}` where `poolId` is a
+   *     32-byte hex string.
    * Pool-level exclusion is only supported by the `fly` exchange aggregator, so
    * setting this restricts every swap in the route to `fly`.
    */
