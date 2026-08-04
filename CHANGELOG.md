@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.88.0](https://github.com/lifinance/types/compare/v17.87.0...v17.88.0) (2026-08-04)
+
+
+### Features
+
+* add amountFlexible route option ([#555](https://github.com/lifinance/types/issues/555)) ([00032eb](https://github.com/lifinance/types/commit/00032eb76490ea3298e579288e90e2ed7b7bcfd5))
+
 ## [17.87.0](https://github.com/lifinance/types/compare/v17.87.0-beta.0...v17.87.0) (2026-07-29)
 
 
