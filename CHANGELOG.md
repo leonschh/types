@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.89.0](https://github.com/lifinance/types/compare/v17.88.0...v17.89.0) (2026-08-04)
+
+
+### Features
+
+* add permissioned disableFees request param ([#547](https://github.com/lifinance/types/issues/547)) ([c0d2f3b](https://github.com/lifinance/types/commit/c0d2f3b1ebcfaebeb9ebb9fb3201db87f6bd3a3f))
+
 ## [17.88.0](https://github.com/lifinance/types/compare/v17.87.0...v17.88.0) (2026-08-04)
 
 
