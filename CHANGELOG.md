@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.2.0](https://github.com/lifinance/types/compare/v18.1.0...v18.2.0) (2026-08-05)
+
+
+### Features
+
+* add DestinationAction to RouteOptions and LiFiStep ([#564](https://github.com/lifinance/types/issues/564)) ([9149474](https://github.com/lifinance/types/commit/9149474ac4362ab0a295d4e6d386160468ac0be1))
+
 ## [18.1.0](https://github.com/lifinance/types/compare/v18.0.0...v18.1.0) (2026-08-05)
 
 
