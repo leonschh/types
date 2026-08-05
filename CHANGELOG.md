@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.90.0](https://github.com/lifinance/types/compare/v17.89.0...v17.90.0) (2026-08-04)
+
+
+### Features
+
+* add destinationAction params to QuoteRequest ([#556](https://github.com/lifinance/types/issues/556)) ([1b0a469](https://github.com/lifinance/types/commit/1b0a4694e414240c897b7446600febfe8e70bbea))
+
 ## [17.89.0](https://github.com/lifinance/types/compare/v17.88.0...v17.89.0) (2026-08-04)
 
 
