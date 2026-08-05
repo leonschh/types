@@ -153,6 +153,10 @@ export interface RouteOptionsBase {
   /** Protocols that should or should not be taken into consideration for the possibilities */
   protocols?: AllowDenyPrefer
 
+  /** Pools that should not be taken into consideration for the possibilities.
+   *  Only supported by the `fly` exchange — see {@link PoolDeny}. */
+  pools?: PoolDeny
+
   /** Timing strategies for the routes */
   timing?: Timing
 
@@ -278,6 +282,18 @@ export interface AllowDenyPrefer {
   allow?: string[] // (default: [all])
   deny?: string[] // (default: [])
   prefer?: string[] // (default: []) // eg. ['1inch'] to use 1inch if available and fall back to others if not
+}
+
+export interface PoolDeny {
+  /**
+   * AMM pool identifiers to exclude from swap quoting. Accepts either:
+   *   - Uniswap V2 / V3: a plain EVM pool address (`0x` + 40 hex, non-zero).
+   *   - Uniswap V4: `${poolManagerAddress}-${poolId}` where `poolId` is a
+   *     32-byte hex string.
+   * Pool-level exclusion is only supported by the `fly` exchange aggregator, so
+   * setting this restricts every swap in the route to `fly`.
+   */
+  deny?: string[]
 }
 
 /**
@@ -418,6 +434,7 @@ export interface ToolConfiguration {
   preferExchanges?: string[]
   allowProtocols?: string[]
   denyProtocols?: string[]
+  denyPools?: string[]
 }
 
 export interface QuoteRequest extends ToolConfiguration, TimingStrings {
