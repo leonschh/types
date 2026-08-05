@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.1.0](https://github.com/lifinance/types/compare/v18.0.0...v18.1.0) (2026-08-05)
+
+
+### Features
+
+* **routes:** deny pools ([#560](https://github.com/lifinance/types/issues/560)) ([b7c22d2](https://github.com/lifinance/types/commit/b7c22d2be29c7df41910012b8db41b0dab7b8736))
+
 ## [18.0.0](https://github.com/lifinance/types/compare/v17.90.0...v18.0.0) (2026-08-05)
 
 
