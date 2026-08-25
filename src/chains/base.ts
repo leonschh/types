@@ -107,6 +107,7 @@ export enum ChainKey {
   OPST = 'opst',
   BAST = 'bast',
   ARBS = 'arbs',
+  ETHS = 'eths',
 }
 
 export enum ChainId {
@@ -216,4 +217,5 @@ export enum ChainId {
   OPST = 11155420,
   BAST = 84532,
   ARBS = 421614,
+  ETHS = 11155111,
 }
