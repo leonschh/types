@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.4.0](https://github.com/lifinance/types/compare/v18.3.0...v18.4.0) (2026-08-27)
+
+
+### Features
+
+* add ethereum sepolia chain ([#569](https://github.com/lifinance/types/issues/569)) ([1085526](https://github.com/lifinance/types/commit/108552690dbdd9f28d995da04f3f4b6ca8a9931f))
+
 ## [18.3.0](https://github.com/lifinance/types/compare/v18.2.0...v18.3.0) (2026-08-27)
 
 
